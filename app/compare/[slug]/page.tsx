@@ -108,7 +108,7 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
                 A licensed advisor will compare your real options in minutes — free and with no obligation.
               </p>
               <div className="mt-6">
-                <ButtonLink href="/#quote" size="lg">See my plan matches</ButtonLink>
+                <ButtonLink href="/#get-started" size="lg">See my plan matches</ButtonLink>
               </div>
             </div>
           </Reveal>

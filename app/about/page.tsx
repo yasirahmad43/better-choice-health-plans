@@ -15,7 +15,7 @@ export const metadata = pageMeta({
 const values = [
   { icon: Compass, title: "Independent by design", body: "We don't work for a single carrier. We work for you â€” comparing plans across major insurers to find your best fit." },
   { icon: Scale, title: "Education over pressure", body: "We explain the trade-offs in plain English and let you decide. No scripts, no scare tactics, no hard sell." },
-  { icon: Heart, title: "People before policies", body: "Behind every quote is a real person with real needs. We treat your coverage like it's our own family's." },
+  { icon: Heart, title: "People before policies", body: "Behind every recommendation is a real person with real needs. We treat your coverage like it's our own family's." },
   { icon: ShieldCheck, title: "Transparency always", body: "Clear pricing, clear disclosures, clear next steps. You'll always know exactly where you stand." },
 ];
 

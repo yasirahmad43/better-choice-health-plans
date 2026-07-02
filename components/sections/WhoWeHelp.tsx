@@ -32,7 +32,7 @@ export function WhoWeHelp() {
           </Reveal>
           <Reveal delay={0.15}>
             <div className="mt-9">
-              <ButtonLink href="/#quote" size="lg">
+              <ButtonLink href="/#get-started" size="lg">
                 Find my plan
               </ButtonLink>
             </div>

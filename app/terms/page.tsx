@@ -21,7 +21,7 @@ export default function TermsPage() {
         Content on this site is provided for general informational purposes only and does not constitute
         insurance, legal, tax, or financial advice. Plan benefits, availability, networks, and pricing
         vary by carrier, state, and individual eligibility. Any figures shown are illustrative examples,
-        not quotes or offers of coverage.
+        not offers or guarantees of coverage.
       </p>
 
       <h2>No agency relationship with government programs</h2>

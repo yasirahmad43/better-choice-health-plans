@@ -4,7 +4,7 @@ import { Phone } from "lucide-react";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
-/** Mobile-only sticky bottom bar: call + quote. Drives ad-traffic conversion. */
+/** Mobile-only sticky bottom bar: call + plan options. Drives ad-traffic conversion. */
 export function MobileStickyBar() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 lg:hidden">
@@ -17,10 +17,10 @@ export function MobileStickyBar() {
             <Phone className="h-4 w-4" aria-hidden /> Call now
           </a>
           <Link
-            href="/#quote"
+            href="/#get-started"
             className="ring-focus inline-flex h-12 items-center justify-center gap-2 rounded-full bg-accent font-semibold text-white shadow-glow"
           >
-            Get my quote
+            Get My Options
           </Link>
         </div>
       </div>

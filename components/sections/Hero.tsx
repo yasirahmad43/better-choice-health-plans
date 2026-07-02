@@ -142,7 +142,7 @@ export function Hero() {
 
         {/* Right: shield-framed survey */}
         <motion.div
-          id="quote"
+          id="get-started"
           initial={{ opacity: 0, y: 24, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}

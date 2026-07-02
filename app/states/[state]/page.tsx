@@ -124,7 +124,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
                 ))}
               </ul>
               <Link
-                href="/#quote"
+                href="/#get-started"
                 className="ring-focus mt-6 inline-flex h-12 w-full items-center justify-center rounded-full bg-accent font-semibold text-white shadow-glow hover:bg-green-600"
               >
                 Check {s.abbr} plan prices

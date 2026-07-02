@@ -87,7 +87,7 @@ export function Guidance() {
           </Reveal>
           <Reveal delay={0.15}>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <ButtonLink href="/#quote" size="lg">
+              <ButtonLink href="/#get-started" size="lg">
                 Get matched with an advisor
               </ButtonLink>
               <a

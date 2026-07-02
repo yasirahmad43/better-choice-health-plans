@@ -106,7 +106,7 @@ export function CostCompare() {
 
               {/* single CTA */}
               <div className="mt-6">
-                <ButtonLink href="/#quote" size="lg" className="w-full">
+                <ButtonLink href="/#get-started" size="lg" className="w-full">
                   Check my price
                 </ButtonLink>
               </div>

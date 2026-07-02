@@ -61,8 +61,8 @@ export function Header() {
             <Phone className="h-4 w-4" aria-hidden />
             <span>{site.phone}</span>
           </a>
-          <ButtonLink href="/#quote" size="md" className="hidden shadow-glow sm:inline-flex">
-            Get My Quote →
+          <ButtonLink href="/#get-started" size="md" className="hidden shadow-glow sm:inline-flex">
+            Get My Options →
           </ButtonLink>
 
           <button
@@ -127,8 +127,8 @@ export function Header() {
               </nav>
 
               <div className="mt-auto flex flex-col gap-3 pt-6">
-                <ButtonLink href="/#quote" size="lg" onClick={() => setOpen(false)}>
-                  Get my free quote
+                <ButtonLink href="/#get-started" size="lg" onClick={() => setOpen(false)}>
+                  Get My Free Options
                 </ButtonLink>
                 <a
                   href={site.phoneHref}

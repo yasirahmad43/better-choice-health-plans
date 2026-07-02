@@ -9,7 +9,7 @@ const columns = [
     title: "Coverage",
     links: [
       { label: "How it works", href: "/#how-it-works" },
-      { label: "Get a free quote", href: "/#quote" },
+      { label: "Get My Free Options", href: "/#get-started" },
       { label: "Who we help", href: "/#who-we-help" },
       { label: "FAQ", href: "/#faq" },
     ],
@@ -109,7 +109,7 @@ export function Footer() {
             We are not affiliated with, or endorsed by, any federal or state government program, the
             Health Insurance Marketplace, Medicare, or Medicaid. Plan availability, pricing, benefits,
             networks, and eligibility vary by state and individual circumstances. Any premium figures
-            shown are illustrative examples for comparison only and are not quotes or offers of
+            shown are illustrative examples for comparison only and are not offers or guarantees of
             coverage. A licensed advisor will confirm details and exact pricing for your situation.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">

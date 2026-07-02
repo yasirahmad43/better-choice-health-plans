@@ -38,7 +38,7 @@ export default function DisclosuresPage() {
       <h2>Illustrative figures</h2>
       <p>
         Any premiums, savings amounts, member counts, or statistics shown on this site are illustrative
-        examples for comparison and education only. They are not quotes, guarantees, or offers of coverage.
+        examples for comparison and education only. They are not offers, guarantees, or binding pricing.
         Your actual options and pricing will be confirmed by a licensed advisor.
       </p>
 

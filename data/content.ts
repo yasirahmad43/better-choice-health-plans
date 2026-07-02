@@ -82,7 +82,7 @@ export const audiences = [
 export const testimonials = [
   {
     quote:
-      "I'm self-employed and the Marketplace quoted me $760 a month. Better Choice found a PPO that kept my same doctors for nearly half that. My advisor actually explained every number.",
+      "I'm self-employed and the Marketplace wanted $760 a month from me. Better Choice found a PPO that kept my same doctors for nearly half that. My advisor actually explained every number.",
     name: "Marcus R.",
     role: "Freelance designer · Texas",
     rating: 5,

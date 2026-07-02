@@ -44,8 +44,8 @@ export function FinalCTA() {
                 now. Free &amp; no obligation.
               </p>
               <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <ButtonLink href="/#quote" variant="white" size="lg" className="w-full sm:w-auto">
-                  Get my free quote <ArrowRight className="h-5 w-5" />
+                <ButtonLink href="/#get-started" variant="white" size="lg" className="w-full sm:w-auto">
+                  Get My Free Options <ArrowRight className="h-5 w-5" />
                 </ButtonLink>
                 <a
                   href={site.phoneHref}

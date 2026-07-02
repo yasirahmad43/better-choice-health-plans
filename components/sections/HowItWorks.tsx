@@ -50,8 +50,8 @@ export function HowItWorks() {
 
           <Reveal delay={0.2}>
             <div className="mt-9">
-              <ButtonLink href="/#quote" size="lg">
-                Start my free quote
+              <ButtonLink href="/#get-started" size="lg">
+                Start My Free Review
               </ButtonLink>
             </div>
           </Reveal>

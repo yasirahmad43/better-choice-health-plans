@@ -19,7 +19,7 @@ export default function PrivacyPage() {
 
       <h2>Information we collect</h2>
       <p>
-        When you complete a quote request, contact form, or otherwise interact with us, we may collect
+        When you complete a plan request, contact form, or otherwise interact with us, we may collect
         your name, email address, phone number, ZIP code or state, age range, household details, and
         information about your current coverage and insurance needs. We also collect limited technical
         data such as your IP address, browser type, and the pages you visit.
@@ -36,7 +36,7 @@ export default function PrivacyPage() {
       <h2>How we share information</h2>
       <p>
         We share your information with licensed insurance advisors and carrier partners as needed to
-        prepare quotes and help you enroll. We use trusted service providers (such as hosting and
+        prepare plan options and help you enroll. We use trusted service providers (such as hosting and
         analytics vendors) under appropriate confidentiality obligations. We do not sell your personal
         information.
       </p>
