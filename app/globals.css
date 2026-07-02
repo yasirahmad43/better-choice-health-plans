@@ -1,0 +1,227 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Better Choice Health Plans — Brand Design System
+   Palette: deep blue -> teal -> green (from shield logo)
+   ============================================================ */
+
+@theme {
+  /* Brand core */
+  --color-blue-50: #eef5fc;
+  --color-blue-100: #d6e6f6;
+  --color-blue-200: #aecdee;
+  --color-blue-300: #7caede;
+  --color-blue-400: #4a85c6;
+  --color-blue-500: #1f5fa8;
+  --color-blue-600: #1a4f8c;
+  --color-blue-700: #163f70;
+  --color-blue-800: #12325a;
+  --color-blue-900: #0e2647;
+
+  --color-teal-50: #e8f6f7;
+  --color-teal-100: #c8eaec;
+  --color-teal-200: #93d6da;
+  --color-teal-300: #56bcc2;
+  --color-teal-400: #229ba3;
+  --color-teal-500: #0e7c86;
+  --color-teal-600: #0c6770;
+  --color-teal-700: #0a525a;
+  --color-teal-800: #084149;
+  --color-teal-900: #06343a;
+
+  --color-green-50: #ecf8f0;
+  --color-green-100: #d2efdc;
+  --color-green-200: #a7dfba;
+  --color-green-300: #76cb92;
+  --color-green-400: #57b878;
+  --color-green-500: #2fa85a;
+  --color-green-600: #259049;
+  --color-green-700: #1e733b;
+  --color-green-800: #195c30;
+  --color-green-900: #144a28;
+
+  /* Neutrals (slate) */
+  --color-ink-50: #f6f8fb;
+  --color-ink-100: #eef1f6;
+  --color-ink-200: #dde3ec;
+  --color-ink-300: #c2ccda;
+  --color-ink-400: #93a1b5;
+  --color-ink-500: #64748b;
+  --color-ink-600: #475569;
+  --color-ink-700: #334155;
+  --color-ink-800: #1e293b;
+  --color-ink-900: #0f1b2d;
+
+  /* Semantic */
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f6f8fb;
+  --color-foreground: #0f1b2d;
+  --color-muted-foreground: #475569;
+  --color-border: #dde3ec;
+  --color-primary: #1f5fa8;
+  --color-primary-foreground: #ffffff;
+  --color-accent: #2fa85a;
+  --color-accent-foreground: #ffffff;
+  --color-ring: #1f5fa8;
+  --color-destructive: #dc2626;
+
+  /* Fonts */
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  /* Radii */
+  --radius-xs: 0.375rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+
+  /* Shadows */
+  --shadow-soft: 0 1px 2px rgba(15, 27, 45, 0.04), 0 8px 24px rgba(15, 27, 45, 0.06);
+  --shadow-card: 0 1px 3px rgba(15, 27, 45, 0.06), 0 12px 32px rgba(15, 27, 45, 0.08);
+  --shadow-lift: 0 24px 60px rgba(15, 27, 45, 0.14);
+  --shadow-glow: 0 18px 50px rgba(31, 95, 168, 0.28);
+
+  /* Animations */
+  --animate-marquee: marquee 32s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-pulse-ring: pulse-ring 2.4s ease-out infinite;
+  --animate-kenburns: kenburns 28s ease-in-out infinite alternate;
+}
+
+@keyframes kenburns {
+  0% { transform: scale(1.04) translate3d(0, 0, 0); }
+  100% { transform: scale(1.16) translate3d(-2.5%, -2%, 0); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(47, 168, 90, 0.45); }
+  70% { box-shadow: 0 0 0 14px rgba(47, 168, 90, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(47, 168, 90, 0); }
+}
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+  }
+
+  .container-page {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 80rem;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .container-page { padding-inline: 2rem; }
+  }
+
+  .text-gradient-brand {
+    background: linear-gradient(100deg, var(--color-blue-600), var(--color-teal-500) 55%, var(--color-green-500));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-gradient-brand {
+    background-image: linear-gradient(120deg, var(--color-blue-600), var(--color-teal-500) 52%, var(--color-green-500));
+  }
+
+  .bg-gradient-hero {
+    background-image:
+      radial-gradient(1100px 500px at 8% -8%, rgba(31, 95, 168, 0.10), transparent 60%),
+      radial-gradient(900px 480px at 100% 0%, rgba(47, 168, 90, 0.10), transparent 55%),
+      linear-gradient(180deg, #ffffff 0%, #f6f8fb 100%);
+  }
+
+  /* Signature "river path" landscape: sky at top -> green meadow at the base */
+  .bg-landscape {
+    background-image:
+      radial-gradient(150% 95% at 50% -12%, rgba(31, 95, 168, 0.12), transparent 55%),
+      radial-gradient(130% 75% at 50% 118%, rgba(47, 168, 90, 0.20), transparent 62%),
+      linear-gradient(180deg, #eef6fd 0%, #ffffff 52%, #eef9f0 100%);
+  }
+  .bg-meadow {
+    background-image:
+      radial-gradient(120% 80% at 50% 120%, rgba(47, 168, 90, 0.16), transparent 60%),
+      linear-gradient(180deg, #ffffff 0%, #f1faf3 100%);
+  }
+
+  /* Organic blob radius for the river-path look */
+  .rounded-blob {
+    border-radius: 42% 58% 56% 44% / 50% 44% 56% 50%;
+  }
+
+  .ring-focus:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px var(--color-ring);
+  }
+
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+  .shadow-lift { box-shadow: var(--shadow-lift); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  .input-tp {
+    height: 52px;
+    width: 100%;
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-ink-200);
+    background: #ffffff;
+    padding-inline: 1rem;
+    font-size: 1rem;
+    color: var(--color-ink-900);
+    outline: none;
+    transition: border-color 150ms ease;
+  }
+  textarea.input-tp { height: auto; }
+  .input-tp:focus { border-color: var(--color-blue-400); }
+  .input-tp::placeholder { color: var(--color-ink-400); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
