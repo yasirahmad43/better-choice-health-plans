@@ -9,9 +9,8 @@ export const site = {
   tagline: "A better choice for affordable PPO health coverage.",
   description:
     "Better Choice Health Plans is an independent health insurance brokerage helping individuals, families, and the self-employed find flexible private PPO coverage from major carriers — with broad networks, year-round enrollment, and free guidance from licensed advisors.",
-  // Placeholder — replace with the real tracked number before launch.
-  phone: "(800) 555-0142",
-  phoneHref: "tel:+18005550142",
+  phone: "(217) 335-7909",
+  phoneHref: "tel:+12173357909",
   email: "hello@betterchoicehealthplans.com",
   // Deployed to a Vercel subdomain first; replace when the real domain is live.
   url: "https://betterchoicehealthplans.com",
