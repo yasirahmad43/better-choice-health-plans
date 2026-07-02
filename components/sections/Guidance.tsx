@@ -21,7 +21,7 @@ export function Guidance() {
             <div className="overflow-hidden rounded-3xl bg-gradient-brand p-1.5 shadow-lift">
               <div className="relative aspect-[4/3] overflow-hidden rounded-[1.35rem]">
                 <Image
-                  src="/images/advisor.png"
+                  src="/images/advisor.jpg"
                   alt="A friendly licensed Better Choice health insurance advisor ready to help by phone"
                   fill
                   sizes="(max-width: 1024px) 100vw, 48vw"

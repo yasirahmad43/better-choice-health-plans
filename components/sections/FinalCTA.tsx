@@ -12,7 +12,7 @@ export function FinalCTA() {
           <div className="relative overflow-hidden rounded-[2rem] px-6 py-14 text-center shadow-lift sm:px-12 sm:py-20">
             {/* background photo */}
             <Image
-              src="/images/family.png"
+              src="/images/family.jpg"
               alt=""
               fill
               sizes="(max-width: 1280px) 100vw, 1200px"

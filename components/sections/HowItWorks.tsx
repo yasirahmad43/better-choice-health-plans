@@ -61,7 +61,7 @@ export function HowItWorks() {
         <Reveal delay={0.1}>
           <div className="relative h-full min-h-[420px] overflow-hidden rounded-3xl border border-ink-200 shadow-lift">
             <Image
-              src="/images/couple-laptop.png"
+              src="/images/couple-laptop.jpg"
               alt="A couple reviewing their private PPO plan options together at home"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

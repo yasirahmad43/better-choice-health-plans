@@ -31,7 +31,7 @@ export function CostCompare() {
           <Reveal>
             <div className="relative h-full min-h-[340px] overflow-hidden rounded-3xl shadow-lift">
               <Image
-                src="/images/family.png"
+                src="/images/family.jpg"
                 alt="A family who found private PPO coverage that fits their budget"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

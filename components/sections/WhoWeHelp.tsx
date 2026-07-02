@@ -44,7 +44,7 @@ export function WhoWeHelp() {
             <div className="overflow-hidden rounded-3xl bg-gradient-brand p-1.5 shadow-lift">
               <div className="relative aspect-[4/3] overflow-hidden rounded-[1.35rem]">
                 <Image
-                  src="/images/self-employed.png"
+                  src="/images/self-employed.jpg"
                   alt="A self-employed Better Choice member working confidently from her bright home office"
                   fill
                   sizes="(max-width: 1024px) 100vw, 48vw"
