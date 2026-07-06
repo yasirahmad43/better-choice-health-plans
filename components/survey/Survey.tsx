@@ -92,7 +92,6 @@ export function Survey({
     if (answers.lastName.trim().length < 2) e.lastName = "Please enter your last name.";
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(answers.email)) e.email = "Enter a valid email address.";
     if (answers.phone.replace(/\D/g, "").length < 10) e.phone = "Enter a valid 10-digit phone number.";
-    if (!answers.consent) e.consent = "Please agree to be contacted to continue.";
     setErrors(e);
     return Object.keys(e).length === 0;
   };
@@ -108,6 +107,7 @@ export function Survey({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...answers,
+          consent: true, // no separate checkbox — submitting the form is the consent action (see disclaimer text)
           ...collectUtm(),
           page_path: window.location.pathname,
           source,
@@ -312,24 +312,12 @@ export function Survey({
                       className="absolute left-[-9999px] h-0 w-0 opacity-0"
                     />
 
-                    <label className="flex cursor-pointer items-start gap-3 text-xs leading-relaxed text-ink-500">
-                      <input
-                        type="checkbox"
-                        checked={answers.consent}
-                        onChange={(e) => set({ consent: e.target.checked })}
-                        className="ring-focus mt-0.5 h-5 w-5 shrink-0 rounded border-ink-300 accent-green-600"
-                      />
-                      <span>
-                        I agree to receive calls/texts from {site.name}{" "}and its licensed agents about
-                        coverage, including by automated technology. Consent isn&apos;t a condition of
-                        purchase. Reply STOP to opt out. Msg/data rates may apply.
-                      </span>
-                    </label>
-                    {errors.consent && (
-                      <p className="text-xs font-medium text-destructive" role="alert">
-                        {errors.consent}
-                      </p>
-                    )}
+                    <p className="text-xs leading-relaxed text-ink-500">
+                      By submitting, you agree to receive calls/texts from {site.name}{" "}and its
+                      licensed agents about coverage, including by automated technology. Consent
+                      isn&apos;t a condition of purchase. Reply STOP to opt out. Msg/data rates may
+                      apply.
+                    </p>
 
                     <button
                       type="submit"
