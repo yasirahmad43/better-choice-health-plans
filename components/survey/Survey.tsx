@@ -288,19 +288,6 @@ export function Survey({
                       inputMode="email"
                       placeholder="Email address"
                     />
-                    <div>
-                      <label htmlFor="sv-msg" className="mb-1.5 block text-sm font-medium text-ink-700">
-                        Message (optional)
-                      </label>
-                      <textarea
-                        id="sv-msg"
-                        value={answers.message}
-                        onChange={(e) => set({ message: e.target.value })}
-                        rows={3}
-                        placeholder="Anything we should know?"
-                        className="ring-focus w-full rounded-xl border border-ink-200 bg-white px-4 py-3 text-base text-ink-900 outline-none transition-colors placeholder:text-ink-400 focus:border-blue-400"
-                      />
-                    </div>
 
                     {/* honeypot */}
                     <input
