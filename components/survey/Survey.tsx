@@ -44,6 +44,13 @@ const variants = {
   exit: (dir: number) => ({ x: dir > 0 ? -48 : 48, opacity: 0 }),
 };
 
+/** Accepts a full state name or 2-letter abbreviation, case-insensitive (e.g. "Florida" or "FL"). */
+function isValidStateInput(raw: string) {
+  const v = raw.trim().toLowerCase();
+  if (!v) return false;
+  return states.some((s) => s.name.toLowerCase() === v || s.abbr.toLowerCase() === v);
+}
+
 export function Survey({
   className,
   source = "homepage_survey",
@@ -195,10 +202,13 @@ export function Survey({
                         {states.map((s) => (
                           <option key={s.slug} value={s.name} />
                         ))}
+                        {states.map((s) => (
+                          <option key={s.abbr} value={s.abbr} />
+                        ))}
                       </datalist>
                     </div>
                     <PrimaryNext
-                      disabled={answers.state.trim().length < 3}
+                      disabled={!isValidStateInput(answers.state)}
                       onClick={goNext}
                     />
                   </div>
