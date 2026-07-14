@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { Phone, X } from "lucide-react";
@@ -12,6 +13,9 @@ import { cn } from "@/lib/utils";
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  // Portal target only exists client-side.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -82,8 +86,13 @@ export function Header() {
         </div>
       </div>
 
-      <AnimatePresence>
-        {open && (
+      {/* Portaled to <body>: the scrolled header's backdrop-blur creates a
+          containing block that would otherwise trap this fixed overlay inside
+          the header strip (white panel missing behind menu links). */}
+      {mounted &&
+        createPortal(
+          <AnimatePresence>
+            {open && (
           <motion.div
             className="fixed inset-0 z-[60] lg:hidden"
             initial={{ opacity: 0 }}
@@ -139,8 +148,10 @@ export function Header() {
               </div>
             </motion.div>
           </motion.div>
+            )}
+          </AnimatePresence>,
+          document.body
         )}
-      </AnimatePresence>
     </header>
   );
 }
