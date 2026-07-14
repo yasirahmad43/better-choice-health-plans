@@ -54,9 +54,9 @@ export function Hero() {
             className="animate-kenburns object-cover"
           />
         )}
-        {/* legibility scrims keep text + form crisp */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/88 to-white/45" />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/35 to-white/55" />
+        {/* legibility scrims — strong over the text column, light over the rest so the video shows */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/60 to-white/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/15 to-white/5" />
       </div>
 
       {/* mobile: video above the hero content */}
