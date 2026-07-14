@@ -18,7 +18,9 @@ const HERO_VIDEO_SRC = "/videos/hero.mp4";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-landscape">
+    // `isolate` creates a stacking context so the -z-10 video layers above the
+    // page background instead of being buried behind the body's white fill
+    <section className="relative isolate overflow-hidden bg-landscape">
       {/* animated media background — video behind the hero on desktop */}
       <div aria-hidden className="absolute inset-0 -z-10 overflow-hidden">
         {HERO_VIDEO_SRC ? (
