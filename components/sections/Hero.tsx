@@ -19,20 +19,31 @@ const HERO_VIDEO_SRC = "/videos/hero.mp4";
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-landscape">
-      {/* animated media background */}
+      {/* animated media background — video behind the hero on desktop */}
       <div aria-hidden className="absolute inset-0 -z-10 overflow-hidden">
         {HERO_VIDEO_SRC ? (
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster="/images/hero-video-poster.jpg"
-            className="absolute inset-0 h-full w-full object-cover"
-          >
-            <source src={HERO_VIDEO_SRC} type="video/mp4" />
-          </video>
+          <>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster="/images/hero-video-poster.jpg"
+              className="absolute inset-0 hidden h-full w-full object-cover lg:block"
+            >
+              <source src={HERO_VIDEO_SRC} type="video/mp4" />
+            </video>
+            {/* mobile keeps a still backdrop; the video shows above the hero instead */}
+            <Image
+              src="/images/hero-landscape.png"
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover lg:hidden"
+            />
+          </>
         ) : (
           <Image
             src="/images/hero-landscape.png"
@@ -47,6 +58,25 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/88 to-white/45" />
         <div className="absolute inset-0 bg-gradient-to-t from-white via-white/35 to-white/55" />
       </div>
+
+      {/* mobile: video above the hero content */}
+      {HERO_VIDEO_SRC && (
+        <div className="container-page relative pt-4 lg:hidden">
+          <div className="overflow-hidden rounded-2xl border border-ink-200 shadow-card">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster="/images/hero-video-poster.jpg"
+              className="aspect-video w-full object-cover"
+            >
+              <source src={HERO_VIDEO_SRC} type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      )}
 
       <div className="container-page relative grid items-center gap-10 pb-16 pt-5 lg:grid-cols-[1fr_1.05fr] lg:gap-12 lg:pb-24 lg:pt-20">
         {/* Left: message */}

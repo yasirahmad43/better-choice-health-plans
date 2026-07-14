@@ -122,6 +122,17 @@ export function Footer() {
               <Link href="/disclosures" className="hover:text-blue-700">Disclosures</Link>
             </nav>
           </div>
+          <p className="text-center sm:text-left">
+            Powered by:{" "}
+            <a
+              href="https://www.d1techcreative.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-blue-700 hover:underline"
+            >
+              D1TechCreative
+            </a>
+          </p>
         </div>
       </div>
     </footer>
