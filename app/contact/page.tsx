@@ -28,7 +28,8 @@ export default function ContactPage() {
 
       <section className="py-16 sm:py-20">
         <div className="container-page grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="space-y-6">
+          {/* Mobile: survey first (right after the page hero); desktop: cards left, survey right */}
+          <div className="order-2 space-y-6 lg:order-1">
             <ContactCard icon={Phone} title="Call us" lines={[site.phone]} href={site.phoneHref} cta="Tap to call" />
             <ContactCard icon={Mail} title="Email us" lines={[site.email]} href={`mailto:${site.email}`} cta="Send an email" />
             <div className="rounded-2xl border border-ink-200 bg-ink-50 p-6">
@@ -49,7 +50,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div>
+          <div className="order-1 lg:order-2">
             <h2 className="font-display text-2xl font-semibold text-ink-900">
               Compare your plan options
             </h2>
