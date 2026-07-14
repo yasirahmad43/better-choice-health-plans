@@ -17,11 +17,13 @@ export function pageMeta({
   noindex = false,
 }: PageMetaInput): Metadata {
   const url = new URL(path, site.url).toString();
+  // The layout's title template already appends "| site.name" — only the
+  // OG/Twitter titles (which the template does not touch) get it manually.
   const fullTitle =
     path === "/" ? title : `${title} | ${site.name}`;
 
   return {
-    title: fullTitle,
+    title,
     description,
     alternates: { canonical: url },
     robots: noindex

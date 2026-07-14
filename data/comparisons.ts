@@ -23,14 +23,14 @@ export const comparisons: Comparison[] = [
     title: "Private PPO vs. ACA Marketplace Plans",
     metaTitle: "Private PPO vs ACA Marketplace: Which Saves You More?",
     metaDescription:
-      "Compare private PPO health plans with ACA Marketplace coverage â€” premiums, networks, enrollment windows, and who each option fits best.",
+      "Compare private PPO health plans with ACA Marketplace coverage — premiums, networks, enrollment windows, and who each option fits best.",
     intro:
       "If you don't qualify for a Marketplace subsidy, a private PPO plan often delivers comparable coverage for far less. Here's an honest, side-by-side look at how the two options compare.",
     takeaway:
       "Choose the ACA Marketplace if you qualify for a meaningful subsidy or have significant pre-existing conditions. Choose a private PPO if you earn too much for subsidies and want lower premiums, a broad network, and year-round enrollment.",
     columns: { a: "ACA Marketplace", b: "Private PPO (Better Choice)" },
     rows: [
-      { feature: "Monthly premium (no subsidy)", a: "Often $600â€“$900", b: "Frequently $250â€“$450" },
+      { feature: "Monthly premium (no subsidy)", a: "Often $600–$900", b: "Frequently $250–$450" },
       { feature: "Enrollment window", a: "Open Enrollment only", b: "Year-round" },
       { feature: "Network breadth", a: "Often narrow HMO/EPO", b: "Broad nationwide PPO" },
       { feature: "Pre-existing conditions", a: "Always covered", b: "Medically underwritten" },
@@ -40,7 +40,7 @@ export const comparisons: Comparison[] = [
     body: [
       {
         h: "How are the premiums different?",
-        p: "Marketplace premiums are community-rated and, without a subsidy, reflect the full cost of the plan. Private PPO plans are medically underwritten, so healthy applicants frequently qualify for noticeably lower premiums â€” sometimes close to half â€” for a comparable level of coverage.",
+        p: "Marketplace premiums are community-rated and, without a subsidy, reflect the full cost of the plan. Private PPO plans are medically underwritten, so healthy applicants frequently qualify for noticeably lower premiums — sometimes close to half — for a comparable level of coverage.",
       },
       {
         h: "Can I switch any time of year?",
@@ -63,14 +63,14 @@ export const comparisons: Comparison[] = [
     title: "Private PPO vs. COBRA Coverage",
     metaTitle: "Private PPO vs COBRA: A Cheaper Way to Stay Covered?",
     metaDescription:
-      "Just left a job? Compare COBRA continuation coverage with private PPO plans â€” cost, flexibility, and how to avoid a coverage gap.",
+      "Just left a job? Compare COBRA continuation coverage with private PPO plans — cost, flexibility, and how to avoid a coverage gap.",
     intro:
-      "COBRA lets you keep your old employer plan â€” but you pay the full premium plus an admin fee, which is often expensive. For many people leaving a job, a private PPO plan is a more affordable way to stay covered.",
+      "COBRA lets you keep your old employer plan — but you pay the full premium plus an admin fee, which is often expensive. For many people leaving a job, a private PPO plan is a more affordable way to stay covered.",
     takeaway:
-      "Keep COBRA if you're mid-treatment and need to preserve your exact plan and network short-term. Otherwise, a private PPO usually costs far less for similar coverage â€” and can start right away.",
+      "Keep COBRA if you're mid-treatment and need to preserve your exact plan and network short-term. Otherwise, a private PPO usually costs far less for similar coverage — and can start right away.",
     columns: { a: "COBRA", b: "Private PPO (Better Choice)" },
     rows: [
-      { feature: "Typical monthly cost", a: "$650â€“$1,200+ (full premium)", b: "Frequently $250â€“$450" },
+      { feature: "Typical monthly cost", a: "$650–$1,200+ (full premium)", b: "Frequently $250–$450" },
       { feature: "How long it lasts", a: "Usually up to 18 months", b: "Ongoing, month-to-month" },
       { feature: "Keeps your exact plan", a: "Yes", b: "New plan, broad PPO network" },
       { feature: "When it starts", a: "Retroactive to coverage loss", b: "Right away" },
@@ -80,7 +80,7 @@ export const comparisons: Comparison[] = [
     body: [
       {
         h: "Why is COBRA so expensive?",
-        p: "While employed, your employer pays most of your premium. With COBRA you pay 100% of it â€” plus up to a 2% administrative fee. That's why COBRA bills often come as a shock, frequently running well over $700 a month for an individual.",
+        p: "While employed, your employer pays most of your premium. With COBRA you pay 100% of it — plus up to a 2% administrative fee. That's why COBRA bills often come as a shock, frequently running well over $700 a month for an individual.",
       },
       {
         h: "Will I have a coverage gap?",
@@ -103,9 +103,9 @@ export const comparisons: Comparison[] = [
     title: "Private PPO vs. Short-Term Health Plans",
     metaTitle: "Private PPO vs Short-Term Health Plans: What's the Difference?",
     metaDescription:
-      "Understand the difference between short-term medical plans and private PPO coverage â€” benefits, limits, networks, and which fits your situation.",
+      "Understand the difference between short-term medical plans and private PPO coverage — benefits, limits, networks, and which fits your situation.",
     intro:
-      "Short-term plans are cheap but limited â€” they're designed to bridge brief gaps, not to be your main coverage. A private PPO plan offers more comprehensive, ongoing protection.",
+      "Short-term plans are cheap but limited — they're designed to bridge brief gaps, not to be your main coverage. A private PPO plan offers more comprehensive, ongoing protection.",
     takeaway:
       "Use a short-term plan only to bridge a brief, defined gap. For ongoing, comprehensive coverage with a real network, a private PPO is the stronger long-term choice.",
     columns: { a: "Short-Term Plan", b: "Private PPO (Better Choice)" },
@@ -124,11 +124,11 @@ export const comparisons: Comparison[] = [
       },
       {
         h: "Why choose a private PPO instead?",
-        p: "A private PPO plan provides far more complete protection â€” broad networks, preventive care, and no hard benefit caps in the way short-term plans have â€” while still being affordable for healthy individuals and families.",
+        p: "A private PPO plan provides far more complete protection — broad networks, preventive care, and no hard benefit caps in the way short-term plans have — while still being affordable for healthy individuals and families.",
       },
     ],
     bestFor: {
-      a: ["You need coverage for under 2â€“3 months", "You're young and healthy", "You want the lowest possible premium temporarily"],
+      a: ["You need coverage for under 2–3 months", "You're young and healthy", "You want the lowest possible premium temporarily"],
       b: ["You need real, ongoing coverage", "You want preventive care included", "You want a broad PPO network"],
     },
   },

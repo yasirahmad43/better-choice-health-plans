@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Contact Better Choice Health Plans",
   description:
-    "Talk to a licensed advisor about private PPO health coverage. Call us, email us, or send a message â€” free, no-obligation help nationwide.",
+    "Talk to a licensed advisor about private PPO health coverage. Call us, email us, or send a message — free, no-obligation help nationwide.",
   path: "/contact",
 });
 
@@ -22,7 +22,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Talk to a licensed advisor"
-        subtitle="Have a question or ready to compare plans? Reach out and a real, licensed advisor will help â€” no pressure, no cost."
+        subtitle="Have a question or ready to compare plans? Reach out and a real, licensed advisor will help — no pressure, no cost."
         breadcrumbs={[{ name: "Home", href: "/" }, { name: "Contact", href: "/contact" }]}
       />
 
@@ -85,12 +85,12 @@ function ContactCard({
       <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand text-white">
         <Icon className="h-6 w-6" />
       </span>
-      <div>
+      <div className="min-w-0">
         <h3 className="font-semibold text-ink-900">{title}</h3>
         {lines.map((l) => (
-          <p key={l} className="font-display text-lg font-semibold text-blue-700">{l}</p>
+          <p key={l} className="break-all font-display text-lg font-semibold text-blue-700">{l}</p>
         ))}
-        <span className="text-sm text-ink-500 group-hover:text-blue-700">{cta} â†’</span>
+        <span className="text-sm text-ink-500 group-hover:text-blue-700">{cta} →</span>
       </div>
     </a>
   );

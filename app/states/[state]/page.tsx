@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
   if (!s) return {};
   return pageMeta({
     title: `Private PPO Health Insurance in ${s.name}`,
-    description: `Find affordable private PPO health coverage in ${s.name}. Compare plans from major carriers with help from a licensed Better Choice advisor â€” year-round enrollment, no obligation.`,
+    description: `Find affordable private PPO health coverage in ${s.name}. Compare plans from major carriers with help from a licensed Better Choice advisor — year-round enrollment, no obligation.`,
     path: `/states/${s.slug}`,
   });
 }
@@ -62,13 +62,13 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
       ]} />
 
       <PageHero
-        eyebrow={`${s.name} Â· ${s.abbr}`}
+        eyebrow={`${s.name} · ${s.abbr}`}
         title={
           <>
             Private PPO health insurance in <span className="text-gradient-brand">{s.name}</span>
           </>
         }
-        subtitle={`Affordable, flexible coverage for ${s.name} individuals, families, and the self-employed â€” with broad networks that work in ${s.cities.join(", ")}, and beyond.`}
+        subtitle={`Affordable, flexible coverage for ${s.name} individuals, families, and the self-employed — with broad networks that work in ${s.cities.join(", ")}, and beyond.`}
         breadcrumbs={[
           { name: "Home", href: "/" },
           { name: "States", href: "/states" },
@@ -86,7 +86,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
               <p>
                 If you live in {s.name} and don&apos;t qualify for a Marketplace subsidy, you may be
                 overpaying for health insurance. {site.name} helps {s.name} residents compare private
-                PPO plans from major carriers and find coverage that fits their budget and doctors â€”
+                PPO plans from major carriers and find coverage that fits their budget and doctors —
                 available year-round, not just during open enrollment.
               </p>
               <p>
@@ -137,7 +137,7 @@ export default async function StatePage({ params }: { params: Promise<{ state: s
       <CostCompare />
       <HowItWorks />
 
-      {/* state FAQ â€” visible + schema */}
+      {/* state FAQ — visible + schema */}
       <section className="bg-ink-50 py-16 sm:py-20">
         <div className="container-page max-w-3xl">
           <h2 className="text-center font-display text-3xl font-semibold text-ink-900">

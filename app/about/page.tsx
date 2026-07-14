@@ -13,7 +13,7 @@ export const metadata = pageMeta({
 });
 
 const values = [
-  { icon: Compass, title: "Independent by design", body: "We don't work for a single carrier. We work for you â€” comparing plans across major insurers to find your best fit." },
+  { icon: Compass, title: "Independent by design", body: "We don't work for a single carrier. We work for you — comparing plans across major insurers to find your best fit." },
   { icon: Scale, title: "Education over pressure", body: "We explain the trade-offs in plain English and let you decide. No scripts, no scare tactics, no hard sell." },
   { icon: Heart, title: "People before policies", body: "Behind every recommendation is a real person with real needs. We treat your coverage like it's our own family's." },
   { icon: ShieldCheck, title: "Transparency always", body: "Clear pricing, clear disclosures, clear next steps. You'll always know exactly where you stand." },
@@ -40,14 +40,14 @@ export default function AboutPage() {
             <div className="prose-tp space-y-5 text-lg leading-relaxed text-ink-700">
               <h2 className="font-display text-2xl font-semibold text-ink-900">Why we exist</h2>
               <p>
-                Millions of Americans don&apos;t qualify for Marketplace subsidies â€” the self-employed,
+                Millions of Americans don&apos;t qualify for Marketplace subsidies — the self-employed,
                 freelancers, early retirees, families between jobs. For them, the &ldquo;official&rdquo;
                 options are often shockingly expensive, and the alternatives are confusing.
               </p>
               <p>
                 We started Better Choice to fix that. As an independent brokerage, we compare private PPO
                 plans from the carriers you already trust and match you with coverage that actually fits
-                your budget, your doctors, and your life â€” available year-round, not just during a narrow
+                your budget, your doctors, and your life — available year-round, not just during a narrow
                 enrollment window.
               </p>
               <p>
