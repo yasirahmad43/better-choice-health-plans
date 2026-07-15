@@ -27,4 +27,4 @@ export const emptyAnswers: Answers = {
 /** Step-by-step survey options — matched to the Healthcare Savings Center flow. */
 export const householdSizes = ["1 person", "2 people", "3 people", "4 or more people"];
 
-export const timeframes = ["Yes, within 30 days", "1–3 months", "Just exploring for now"];
+export const timeframes = ["Immediately", "Within 30 days", "Just comparing options"];

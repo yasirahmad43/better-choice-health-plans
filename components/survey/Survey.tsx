@@ -129,7 +129,7 @@ export function Survey({
       "Let's find your coverage",
       "How many people in your household need health insurance coverage?",
       "Do you or anyone in your household have any major pre-existing conditions that need to be covered?",
-      "Are you looking to start your health insurance plan within the next 30 days?",
+      "When are you looking for health coverage?",
       "Let's find your best coverage",
     ],
     []
